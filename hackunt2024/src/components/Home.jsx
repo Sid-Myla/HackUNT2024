@@ -5,7 +5,6 @@ const Home = () => {
   return <div>
     <div className='background'>
         <div className='left'>
-
         </div>
         <div className='right'>
             <div className='namebox'>
