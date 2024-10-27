@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { database } from '../firebase/firebaseConfig'; // Adjust the path as necessary
 import { ref, set, get, onValue } from 'firebase/database';
+import './counter.css'; // Import the CSS file
 
 const Counter = () => {
   const [count, setCount] = useState(0); // Local state for count
@@ -51,12 +52,10 @@ const Counter = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Counter: {count}</h1>
-      <div>
-        <button onClick={() => updateCount(count + 1)}>Increment</button>
-        <button onClick={() => updateCount(count - 1)}>Decrement</button>
-      </div>
+    <div className="counter-container">
+      <h1 className="counter-title">Counter: {count}</h1>
+      <button className="counter-button" onClick={() => updateCount(count + 1)}>+1</button>
+      <button className="counter-button" onClick={() => updateCount(count - 1)}>-1</button>
     </div>
   );
 };
