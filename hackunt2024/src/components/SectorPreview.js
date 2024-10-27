@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 import './SectorPreview.css';
-
-// Dummy Thermostat component
-const Thermostat = () => {
-    return <div className="thermostat">Thermostat Component: Adjust your temperature settings here.</div>;
-};
+import Thermostat from './Thermostat';
 
 const SectorPreview = ({ sector }) => {
     const [selectedOption, setSelectedOption] = useState(null);
@@ -23,7 +19,7 @@ const SectorPreview = ({ sector }) => {
             <p>Area: 1000 ft²</p>
             </div>
             <div className='select'>
-                <h4>Select a measurement:</h4>
+                <h4>Optimizing Metric</h4>
                 <label>
                     <input
                         type="radio"
