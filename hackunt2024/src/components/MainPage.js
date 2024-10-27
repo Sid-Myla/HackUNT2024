@@ -15,6 +15,7 @@ const MainPage = () => {
         <SectorPreview sector="Sector 1: Restaurant" />
         <SectorPreview sector="Sector 2: Grocery Shop" />
         <SectorPreview sector="Sector 3: Back Area" />
+        <SectorPreview sector="Sector 4: Kitchen" />
       </div>
       </div>
     </div>
