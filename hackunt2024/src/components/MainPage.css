@@ -20,7 +20,8 @@
   margin:auto;
   border-radius: 10px;
   overflow-y: auto;
-  padding-top: 1.4rem;
+  padding: 1.4rem 0 1.4rem 0;
+  margin-bottom: 50px;
 }
 
   .blueprint-container {

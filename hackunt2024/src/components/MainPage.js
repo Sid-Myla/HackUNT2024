@@ -2,7 +2,6 @@ import React from 'react';
 import './MainPage.css';
 import Blueprint from './Blueprint';
 import SectorPreview from './SectorPreview';
-import OverallViewButton from './OverallViewButton';
 
 const MainPage = () => {
   return (
@@ -16,9 +15,6 @@ const MainPage = () => {
         <SectorPreview sector="Sector 1: Restaurant" />
         <SectorPreview sector="Sector 2: Grocery Shop" />
         <SectorPreview sector="Sector 3: Back Area" />
-      </div>
-      <div className="overall-view-button">
-        <OverallViewButton />
       </div>
       </div>
     </div>
